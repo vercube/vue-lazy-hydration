@@ -2,11 +2,6 @@
  * This component allows to defer DOM hydration by vue. Whatever is wrapped with this component
  * will not be hydrated when front is loaded, instead it will be deferred.
  *
- * We have to override lazy-hydration-wrapper to backport the feature to Vue 2.
- * We also have to use `defineComponent` instead of Factory to use `setup` function.
- * `setup` is not available in Factory system, because the instance of class is created on BeforeCreate hook,
- * that executes after `setup` is called.
- *
  * This components is implementation of Vue Core functionality - hydration
  * Hydration management is available from Vue >= 3.5
  * @see: https://github.com/vuejs/core/pull/11458
