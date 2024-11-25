@@ -13,6 +13,7 @@
     "changelog": {
       "automaticFromRef": true,
       "workspaceChangelog": {
+        "createRelease": "github",
         "renderOptions": {
           "authors": false
         }

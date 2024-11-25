@@ -2,7 +2,11 @@
   "name": "@vercube/nuxt-lazy-hydration",
   "version": "1.1.0",
   "description": "Optimize Vue 3 SSR with lazy hydration, delaying HTML hydration until it's needed for better performance",
-  "author": "Oskar Lebuda <o.lebuda@gmail.com>",
+  "sideEffects": false,
+  "author": {
+    "name": "Oskar Lebuda",
+    "email": "o.lebuda@gmail.com"
+  },
   "license": "MIT",
   "module": "./dist/index.esm.js",
   "main": "./dist/index.cjs.js",
@@ -19,6 +23,14 @@
   "engines": {
     "node": ">=18.20.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OskarLebuda/vue-lazy-hydration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OskarLebuda/vue-lazy-hydration/issues"
+  },
+  "homepage": "https://github.com/OskarLebuda/vue-lazy-hydration#readme",
   "keywords": [
     "vue",
     "vue3",

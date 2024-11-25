@@ -40,6 +40,6 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
-    "commit-msg": "commitlint"
+    "commit-msg": "pnpm dlx commitlint --edit $1"
   }
 }

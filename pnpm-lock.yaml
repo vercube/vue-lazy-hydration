@@ -51,8 +51,8 @@ importers:
         specifier: 3.14.1592
         version: 3.14.1592(magicast@0.3.5)(rollup@3.29.5)
       '@vercube/vue-lazy-hydration':
-        specifier: 1.0.0
-        version: 1.0.0(vue@3.5.13(typescript@5.7.2))
+        specifier: 1.1.0
+        version: 1.1.0(vue@3.5.13(typescript@5.7.2))
       nuxt:
         specifier: '>=3.14'
         version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@3.29.5)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.9.3)(terser@5.36.0))
@@ -70,8 +70,8 @@ importers:
   packages/playground:
     devDependencies:
       '@vercube/nuxt-lazy-hydration':
-        specifier: workspace:*
-        version: link:../nuxt-lazy-hydration
+        specifier: 1.1.0
+        version: 1.1.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2))(rollup@4.27.4)(vue@3.5.13(typescript@5.7.2))
       nuxt:
         specifier: 3.14.1592
         version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)
@@ -1721,8 +1721,15 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  '@vercube/vue-lazy-hydration@1.0.0':
-    resolution: {integrity: sha512-KryHmN6cQroONpa18EcYANDWI6l3oJFsBygi9UN6V2o7wQ9Papyb75fCZWpjBCu75KsvYHTGsA6zYs/0W2WIqA==}
+  '@vercube/nuxt-lazy-hydration@1.1.0':
+    resolution: {integrity: sha512-4gHbw7yX6wKBc184XcNVfOLt9OIJWbfjC8L5t+XIHIqaUcbT9H8BjVlvgpL8+l2nEapPqEDomxpaxrDBJLV/Ng==}
+    engines: {node: '>=18.20.0'}
+    peerDependencies:
+      nuxt: '>=3.14'
+      vue: '>=3.5.13'
+
+  '@vercube/vue-lazy-hydration@1.1.0':
+    resolution: {integrity: sha512-+GRwWlxQdwdjSncLbtI4aXpIVYu7JKb+3t6WQAIZLUTo/St4JN3FjmcCGw//Qqxa4kNrB/Ehka4gxua81kWAaw==}
     engines: {node: '>=18.20.0'}
     peerDependencies:
       vue: '>=3.5.13'
@@ -7217,7 +7224,18 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vercube/vue-lazy-hydration@1.0.0(vue@3.5.13(typescript@5.7.2))':
+  '@vercube/nuxt-lazy-hydration@1.1.0(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2))(rollup@4.27.4)(vue@3.5.13(typescript@5.7.2))':
+    dependencies:
+      '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
+      '@vercube/vue-lazy-hydration': 1.1.0(vue@3.5.13(typescript@5.7.2))
+      nuxt: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)
+      vue: 3.5.13(typescript@5.7.2)
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+
+  '@vercube/vue-lazy-hydration@1.1.0(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       vue: 3.5.13(typescript@5.7.2)
 
