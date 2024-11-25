@@ -7,7 +7,7 @@
     "dev": "nuxi dev"
   },
   "devDependencies": {
-    "@vercube/vue-lazy-hydration": "1.0.0",
+    "@vercube/nuxt-lazy-hydration": "1.0.0",
     "nuxt": "3.14.1592"
   }
 }

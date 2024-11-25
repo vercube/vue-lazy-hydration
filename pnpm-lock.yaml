@@ -47,12 +47,12 @@ importers:
 
   packages/nuxt-lazy-hydration:
     dependencies:
-      '@vercube/vue-lazy-hydration':
-        specifier: workspace:*
-        version: link:../vue-lazy-hydration
       '@nuxt/kit':
         specifier: 3.14.1592
         version: 3.14.1592(magicast@0.3.5)(rollup@3.29.5)
+      '@vercube/vue-lazy-hydration':
+        specifier: 1.0.0
+        version: 1.0.0(vue@3.5.13(typescript@5.7.2))
       nuxt:
         specifier: '>=3.14'
         version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@3.29.5)(terser@5.36.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.9.3)(terser@5.36.0))
@@ -69,9 +69,9 @@ importers:
 
   packages/playground:
     devDependencies:
-      '@vercube/vue-lazy-hydration':
+      '@vercube/nuxt-lazy-hydration':
         specifier: workspace:*
-        version: link:../vue-lazy-hydration
+        version: link:../nuxt-lazy-hydration
       nuxt:
         specifier: 3.14.1592
         version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.3)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.4)(terser@5.36.0)(typescript@5.7.2)
@@ -1720,6 +1720,12 @@ packages:
     resolution: {integrity: sha512-mwuyUxskdcV8dd7N7JnxBgvFEz1D9UOePI/WyLLzktv6HSCwgPNQGit/UJ2IykAWGlypKw4pBQjOKWvIbXITSg==}
     engines: {node: '>=16'}
     hasBin: true
+
+  '@vercube/vue-lazy-hydration@1.0.0':
+    resolution: {integrity: sha512-KryHmN6cQroONpa18EcYANDWI6l3oJFsBygi9UN6V2o7wQ9Papyb75fCZWpjBCu75KsvYHTGsA6zYs/0W2WIqA==}
+    engines: {node: '>=18.20.0'}
+    peerDependencies:
+      vue: '>=3.5.13'
 
   '@vitejs/plugin-vue-jsx@4.1.0':
     resolution: {integrity: sha512-KuRejz7KAFvhXDzOudlaS2IyygAwoAEEMtHAdcRSy/8cA5iKH043Qudcz48zsC0M0vvN5iKwIwNMuWbBYn6/Yg==}
@@ -7210,6 +7216,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@vercube/vue-lazy-hydration@1.0.0(vue@3.5.13(typescript@5.7.2))':
+    dependencies:
+      vue: 3.5.13(typescript@5.7.2)
 
   '@vitejs/plugin-vue-jsx@4.1.0(vite@5.4.11(@types/node@22.9.3)(terser@5.36.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
