@@ -22,8 +22,6 @@
 $ pnpm add @vercube/nuxt-lazy-hydration
 ```
 
-## Usage
-
 Add to `modules` in `nuxt.config.ts`:
 
 ```typescript
@@ -33,6 +31,36 @@ export default defineNuxtConfig({
   modules: ['@vercube/nuxt-lazy-hydration'],
 });
 ```
+
+## Usage
+
+To use `NuxtLazyHydration` just wrap your component with wrapper.
+```html
+<template>
+  <NuxtLazyHydration whenVisible>
+    <p>Hydrated when component will be visible on screen<p>
+  </NuxtLazyHydration>
+</template>
+```
+
+You can also use it with composable
+```html
+<template>
+  <NeverHydratedComponent/>
+</template>
+
+<script lang="ts" setup>
+  const NeverHydratedComponent = useLazyHydration(
+    () => import('./SomeComponent.vue'),
+    { ssrOnly: true },
+  );
+
+</script>
+
+```
+
+## Props
+You can find all possible `props` [here](https://github.com/OskarLebuda/vue-lazy-hydration/blob/main/packages/vue-lazy-hydration/src/types/types.ts#L3)
 
 ## License
 

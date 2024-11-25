@@ -68,6 +68,37 @@ Alternatively, you can import LazyHydration directly into your Vue components li
 </script>
 ```
 
+## Usage
+To use `LazyHydration` just wrap your component with wrapper.
+```html
+<template>
+  <LazyHydration whenVisible>
+    <p>Hydrated when component will be visible on screen<p>
+  </LazyHydration>
+</template>
+```
+
+You can also use it with composable
+```html
+<template>
+  <NeverHydratedComponent/>
+</template>
+
+<script lang="ts" setup>
+  import { useLazyHydration } from '@vercube/vue-lazy-hydration';
+
+  const NeverHydratedComponent = useLazyHydration(
+    () => import('./SomeComponent.vue'),
+    { ssrOnly: true },
+  );
+
+</script>
+
+```
+
+## Props
+You can find all possible `props` [here](https://github.com/OskarLebuda/vue-lazy-hydration/blob/main/packages/vue-lazy-hydration/src/types/types.ts#L3)
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

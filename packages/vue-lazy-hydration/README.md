@@ -22,7 +22,6 @@
 $ pnpm add @vercube/vue-lazy-hydration
 ```
 
-## Usage
 For Vue applications, you can register `LazyHydration` either globally or locally within your components.
 
 ## Global Registration
@@ -45,6 +44,38 @@ Alternatively, you can import LazyHydration directly into your Vue components li
   import { LazyHydration } from '@vercube/vue-lazy-hydration';
 </script>
 ```
+
+## Usage
+
+To use `LazyHydration` just wrap your component with wrapper.
+```html
+<template>
+  <LazyHydration whenVisible>
+    <p>Hydrated when component will be visible on screen<p>
+  </LazyHydration>
+</template>
+```
+
+You can also use it with composable
+```html
+<template>
+  <NeverHydratedComponent/>
+</template>
+
+<script lang="ts" setup>
+  import { useLazyHydration } from '@vercube/vue-lazy-hydration';
+
+  const NeverHydratedComponent = useLazyHydration(
+    () => import('./SomeComponent.vue'),
+    { ssrOnly: true },
+  );
+
+</script>
+
+```
+
+## Props
+You can find all possible `props` [here](https://github.com/OskarLebuda/vue-lazy-hydration/blob/main/packages/vue-lazy-hydration/src/types/types.ts#L3)
 
 ## License
 
