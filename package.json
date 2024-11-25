@@ -6,7 +6,7 @@
     "build": "nx run-many --target=build --all",
     "dev": "nx watch --all -- nx run \\$NX_PROJECT_NAME:build",
     "test": "nx run-many -t test",
-    "release": "nx release --yes",
+    "release": "nx release",
     "lint": "prettier -c --parser typescript \"packages/*/**/*.[jt]s?(x)\" --write",
     "postinstall": "simple-git-hooks"
   },
