@@ -1,0 +1,43 @@
+{
+  "name": "@cube/vue-lazy-hydration",
+  "description": "Optimize Vue 3 SSR with lazy hydration, delaying HTML hydration until it's needed for better performance",
+  "author": "Oskar Lebuda <o.lebuda@gmail.com>",
+  "license": "MIT",
+  "module": "./dist/index.esm.js",
+  "main": "./dist/index.cjs.js",
+  "types": "./dist/index.esm.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "module": "./dist/index.esm.js",
+      "types": "./dist/index.esm.d.ts",
+      "import": "./dist/index.cjs.mjs",
+      "default": "./dist/index.cjs.js"
+    }
+  },
+  "engines": {
+    "node": ">=18.20.0"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "lazy-hydration",
+    "hydration",
+    "ssr",
+    "server-side-rendering",
+    "performance",
+    "vue-ssr",
+    "lazy-load",
+    "vue-hydration"
+  ],
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.5.13"
+  },
+  "devDependencies": {
+    "vue": "3.5.13"
+  }
+}

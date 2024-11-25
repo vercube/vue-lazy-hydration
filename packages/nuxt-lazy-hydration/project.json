@@ -1,0 +1,18 @@
+{
+  "name": "@cube/nuxt-lazy-hydration",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "{projectRoot}/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "options": {
+        "main": "{projectRoot}/src/index.ts",
+        "outputPath": "{projectRoot}/dist",
+        "tsConfig": "{projectRoot}/tsconfig.json",
+        "format": ["esm", "cjs"],
+        "generateExportsField": true
+      }
+    }
+  }
+}

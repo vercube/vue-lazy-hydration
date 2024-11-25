@@ -1,0 +1,13 @@
+{
+  "name": "@cube/playground",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev"
+  },
+  "devDependencies": {
+    "@cube/vue-lazy-hydration": "workspace:*",
+    "nuxt": "3.14.1592"
+  }
+}
