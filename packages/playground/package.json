@@ -1,13 +1,13 @@
 {
   "name": "@vercube/playground",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "nuxi dev"
   },
   "devDependencies": {
-    "@vercube/vue-lazy-hydration": "workspace:*",
+    "@vercube/vue-lazy-hydration": "1.0.0",
     "nuxt": "3.14.1592"
   }
 }
