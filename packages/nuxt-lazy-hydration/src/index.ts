@@ -14,13 +14,13 @@ export default defineNuxtModule<ModuleOptions>({
     addComponent({
       name: 'NuxtLazyHydrate',
       export: 'LazyHydration',
-      filePath: '@cube/vue-lazy-hydration',
+      filePath: '@vercube/vue-lazy-hydration',
     });
 
     // Add the composable to the global imports
     addImportsSources({
       imports: ['useLazyHydration'],
-      from: '@cube/vue-lazy-hydration',
+      from: '@vercube/vue-lazy-hydration',
     });
   },
 });

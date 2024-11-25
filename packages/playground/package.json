@@ -1,5 +1,5 @@
 {
-  "name": "@cube/playground",
+  "name": "@vercube/playground",
   "version": "0.0.0",
   "type": "module",
   "private": true,
@@ -7,7 +7,7 @@
     "dev": "nuxi dev"
   },
   "devDependencies": {
-    "@cube/vue-lazy-hydration": "workspace:*",
+    "@vercube/vue-lazy-hydration": "workspace:*",
     "nuxt": "3.14.1592"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@cube/root",
+  "name": "@vercube/root",
   "private": true,
   "type": "module",
   "scripts": {

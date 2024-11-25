@@ -1,5 +1,5 @@
 {
-  "name": "@cube/nuxt-lazy-hydration",
+  "name": "@vercube/nuxt-lazy-hydration",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "{projectRoot}/src",

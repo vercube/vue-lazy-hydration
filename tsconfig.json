@@ -6,7 +6,7 @@
     "sourceMap": false,
     "noEmit": true,
     "paths": {
-      "@cube/*": ["packages/*/src"]
+      "@vercube/*": ["packages/*/src"]
     },
     "target": "esnext",
     "module": "esnext",

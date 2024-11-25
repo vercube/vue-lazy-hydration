@@ -47,7 +47,7 @@ importers:
 
   packages/nuxt-lazy-hydration:
     dependencies:
-      '@cube/vue-lazy-hydration':
+      '@vercube/vue-lazy-hydration':
         specifier: workspace:*
         version: link:../vue-lazy-hydration
       '@nuxt/kit':
@@ -69,7 +69,7 @@ importers:
 
   packages/playground:
     devDependencies:
-      '@cube/vue-lazy-hydration':
+      '@vercube/vue-lazy-hydration':
         specifier: workspace:*
         version: link:../vue-lazy-hydration
       nuxt:
