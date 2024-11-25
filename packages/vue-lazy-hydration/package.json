@@ -1,6 +1,6 @@
 {
   "name": "@vercube/vue-lazy-hydration",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Optimize Vue 3 SSR with lazy hydration, delaying HTML hydration until it's needed for better performance",
   "author": "Oskar Lebuda <o.lebuda@gmail.com>",
   "license": "MIT",
