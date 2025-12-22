@@ -26,8 +26,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.28.5",
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-conventional": "19.8.1",
+    "@commitlint/cli": "20.2.0",
+    "@commitlint/config-conventional": "20.2.0",
     "@nx/js": "20.8.3",
     "@nx/rollup": "20.8.3",
     "@types/node": "22.19.3",
